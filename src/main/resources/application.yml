@@ -1,0 +1,36 @@
+server:
+  port: 8181
+
+logging:
+  level:
+    ROOT: INFO
+
+info:
+  app:
+    build-number: 6
+    description: Application for retrieving data.
+    name: testApp
+    version: 6
+
+# Database connection configuration
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  application:
+    name: ts-sv-api-person
+  main:
+    banner-mode: "off"
+  datasource:
+  # To access in memory DB for debug purpose, change "mem" to "file" in local machine.
+    url: jdbc:h2:file:/home/arch/Desktop/Transact-Campus/transact-api-person-java-zach/src/main/resources/data/persons;AUTO_SERVER=true
+    username: test
+    password: test
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: H2
+  jackson:
+    default-property-inclusion: non_null
