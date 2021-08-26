@@ -11,6 +11,7 @@ http://localhost:8181/persons
 ## Demo
 
 ### Post Request
+```
 {"firstName":"Allen",
 
 "lastName":"Zabe",
@@ -20,8 +21,9 @@ http://localhost:8181/persons
 "zipcode":"48864",
 
 "garbageData":"xyz"}
-
+```
 ### Get Response
+```
 {"id":1,
 
 "firstName":"Allen",
@@ -33,6 +35,7 @@ http://localhost:8181/persons
 "zipcode":48864,
 
 "city":"Okemos"}
+```
 
 ## Technologies
 Spring Data
